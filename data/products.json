@@ -1,0 +1,931 @@
+[
+  {
+    "id": "compact-flight-bag",
+    "name": "Compact Flight Bag",
+    "category": "flight-gear",
+    "tagline": "Our own compact design — one headset, a tablet, and a kneeboard, nothing wasted.",
+    "description": "A compact flight bag designed by the shop owner, a working CFI who got tired of hauling a full-size bag into tight training cockpits. Sized around what a lesson actually needs: one headset, a tablet, a kneeboard, plus pockets for the small stuff. It is still in development and not yet available to order — this listing is a preview of what's coming.",
+    "details": [
+      "Compact footprint for tight training cockpits",
+      "Fits one headset, a tablet, and a kneeboard",
+      "Designed by a working Gold Seal CFI",
+      "In development — not yet available to order"
+    ],
+    "label": "Coming soon — our own design, still in development. Not available to order yet.",
+    "imageAlt": "Black compact flight bag backpack with a front pocket on a white background",
+    "comingSoon": true,
+    "image": "compact-flight-bag.jpg",
+    "price": null,
+    "priceCents": null
+  },
+  {
+    "id": "kneeboard",
+    "name": "Aluminum VFR Pilot Kneeboard",
+    "category": "flight-gear",
+    "tagline": "The student-pilot staple: notes, charts, and VFR references on your leg.",
+    "description": "A brushed-aluminum kneeboard for training flights, with an elastic leg strap that stays put through maneuvers, a pen holder, and a printed VFR reference placard — visibility and cloud clearance, light-gun signals, squawk codes, and cruising altitudes — right where you can read them in the cockpit.",
+    "details": [
+      "Brushed aluminum board with spring clipboard clip",
+      "Adjustable elastic leg strap",
+      "Pen holder",
+      "Printed VFR reference placard"
+    ],
+    "label": null,
+    "imageAlt": "Aluminum VFR pilot kneeboard with printed reference placard and leg strap",
+    "comingSoon": false,
+    "image": "kneeboard.jpg",
+    "price": 24.95,
+    "priceCents": 2495
+  },
+  {
+    "id": "phone-mount",
+    "name": "Suction-Cup Phone Mount",
+    "category": "flight-gear",
+    "tagline": "Your EFB at eye level — in the training airplane or the car.",
+    "description": "A universal suction-cup phone holder for windshield or dashboard, sized for phones running ForeFlight or another EFB. Adjustable arm and a cradle that grips standard and large phones. Test the suction on your own panel before flight, as with any mount.",
+    "details": [
+      "Suction-cup base for windshield or dashboard",
+      "Universal cradle fits most phones",
+      "Adjustable viewing angle"
+    ],
+    "label": "Generic mount — not aviation-certified.",
+    "imageAlt": "Suction-cup phone mount with adjustable cradle",
+    "comingSoon": false,
+    "image": "phone-mount.jpg",
+    "price": 24.95,
+    "priceCents": 2495
+  },
+  {
+    "id": "aviator-sunglasses",
+    "name": "Aviator Sunglasses",
+    "category": "flight-gear",
+    "tagline": "The classic teardrop aviator frame — glare cut for the ramp and the cockpit.",
+    "description": "Classic aviator-style sunglasses with a thin gold-tone metal frame, double bridge, and dark teardrop lenses. The thin temples fit comfortably under a headset, which is exactly why this shape became the pilot standard.",
+    "details": [
+      "Thin gold-tone metal frame with double bridge",
+      "Dark teardrop lenses",
+      "Slim temples that sit comfortably under a headset",
+      "Generic unbranded design"
+    ],
+    "label": null,
+    "imageAlt": "Aviator sunglasses with gold-tone metal frame and dark teardrop lenses",
+    "comingSoon": false,
+    "image": "aviator-sunglasses.jpg",
+    "price": 19.95,
+    "priceCents": 1995
+  },
+  {
+    "id": "student-headset",
+    "name": "Student Pilot Headset",
+    "category": "flight-gear",
+    "tagline": "A first headset that survives flight school and stays comfortable through a two-hour lesson.",
+    "description": "An entry-level aviation headset for student pilots: dual GA plugs, a noise-reducing microphone, and padded ear seals that stay comfortable through long lessons. Renting school headsets adds up fast — this is the one you own from your first solo onward.",
+    "details": [
+      "Dual GA plugs for training aircraft",
+      "Noise-reducing microphone",
+      "Padded headband and ear seals",
+      "Volume control on the ear cup"
+    ],
+    "label": null,
+    "imageAlt": "Black aviation headset with boom microphone and dual GA plugs on a white background",
+    "comingSoon": false,
+    "image": "student-headset.jpg",
+    "price": 99.95,
+    "priceCents": 9995
+  },
+  {
+    "id": "headset-case",
+    "name": "Headset Case",
+    "category": "flight-gear",
+    "tagline": "A hard-sided case so the headset survives the flight bag, the car, and the crew room.",
+    "description": "A rigid protective case sized for a standard aviation headset, with room for the cord and plugs. Keeps the microphone boom and ear seals from getting crushed at the bottom of a flight bag.",
+    "details": [
+      "Hard-sided protective shell",
+      "Fits standard GA headsets with cord and plugs",
+      "Zip closure with carry handle"
+    ],
+    "label": null,
+    "imageAlt": "Black hard-sided headset case open with a headset stored inside",
+    "comingSoon": false,
+    "image": "headset-case.jpg",
+    "price": 19.95,
+    "priceCents": 1995
+  },
+  {
+    "id": "led-flashlight",
+    "name": "Red/White LED Flashlight",
+    "category": "flight-gear",
+    "tagline": "Red light for the night cockpit, white light for the preflight walk-around.",
+    "description": "A compact LED flashlight with switchable red and white light: red to read charts and checklists without wrecking your night vision, white for the night preflight and ramp. Small enough to live in a kneeboard pocket or shirt pocket.",
+    "details": [
+      "Switchable red and white LED light",
+      "Red mode preserves night vision",
+      "Compact pocket size with clip"
+    ],
+    "label": null,
+    "imageAlt": "Red LED flashlight with multiple LEDs in the head, on a white background",
+    "comingSoon": false,
+    "image": "led-flashlight.jpg",
+    "price": 14.95,
+    "priceCents": 1495
+  },
+  {
+    "id": "aviation-batteries",
+    "name": "Aviation Batteries",
+    "category": "flight-gear",
+    "tagline": "AA and AAA packs for headsets, flashlights, and everything else that dies at the worst moment.",
+    "description": "Spare AA and AAA batteries for the gear that runs on them: headsets, flashlights, transceivers, and timers. Keep a pack in the flight bag so a dead headset battery never cancels a lesson.",
+    "details": [
+      "AA and AAA packs",
+      "For headsets, flashlights, and transceivers",
+      "Flight-bag spares for night and XC flights"
+    ],
+    "label": null,
+    "imageAlt": "Green AA and AAA alkaline batteries standing in rows on a white background",
+    "comingSoon": false,
+    "image": "aviation-batteries.jpg",
+    "price": 9.95,
+    "priceCents": 995
+  },
+  {
+    "id": "power-bank",
+    "name": "Power Bank",
+    "category": "flight-gear",
+    "tagline": "USB backup power for the iPad and phone your charts live on.",
+    "description": "A compact USB power bank for charging an iPad or phone in the cockpit, so a dying EFB battery never becomes a problem mid-flight. Charges over USB and recharges at home between flights.",
+    "details": [
+      "Charges iPad and phone over USB",
+      "Compact size for the flight bag or seat pocket",
+      "Charge-level indicator"
+    ],
+    "label": null,
+    "imageAlt": "Black, white, and blue USB power banks on a white background",
+    "comingSoon": false,
+    "image": "power-bank.jpg",
+    "price": 29.95,
+    "priceCents": 2995
+  },
+  {
+    "id": "usb-cables",
+    "name": "USB Cables",
+    "category": "flight-gear",
+    "tagline": "USB-C and Lightning charging cables, sized for the cockpit instead of the floor.",
+    "description": "Charging cables for the devices pilots actually fly with: USB-C and Lightning ends for iPads and phones. Keep a dedicated set in the flight bag so the home charger is never the one you forgot.",
+    "details": [
+      "USB-C and Lightning cables included",
+      "For iPad and phone charging",
+      "Flight-bag length — no floor tangle"
+    ],
+    "label": null,
+    "imageAlt": "Three USB charging cables, Lightning, USB-C, and micro-USB, coiled on a white background",
+    "comingSoon": false,
+    "image": "usb-cables.jpg",
+    "price": 9.95,
+    "priceCents": 995
+  },
+  {
+    "id": "ipad-screen-guard",
+    "name": "iPad Screen Guard",
+    "category": "flight-gear",
+    "tagline": "A screen protector for the iPad your charts live on.",
+    "description": "A clear screen protector for a cockpit iPad: guards the glass against keys, pens, and kneeboard clips in the flight bag, and cuts fingerprint smearing on the chart display. Applies with an alignment-friendly fit and comes with a cleaning kit.",
+    "details": [
+      "Scratch and smudge protection for a chart iPad",
+      "Bubble-resistant application",
+      "Cleaning kit included"
+    ],
+    "label": null,
+    "imageAlt": "Clear tablet screen protector hovering over a tablet",
+    "comingSoon": false,
+    "image": "ipad-screen-guard.jpg",
+    "price": 14.95,
+    "priceCents": 1495
+  },
+  {
+    "id": "document-bag",
+    "name": "Pilot Document Bag",
+    "category": "flight-gear",
+    "tagline": "A slim case for the license, medical, and paperwork you must carry on every flight.",
+    "description": "A slim document bag for a pilot's paperwork: certificate, medical, logbook endorsements, charts, and the folded sectionals that otherwise end up loose in the flight bag. Zips closed and slips into a flight bag or seat pocket.",
+    "details": [
+      "Sized for certificates, medical, and charts",
+      "Zip closure",
+      "Slim profile for flight bag or seat pocket"
+    ],
+    "label": null,
+    "imageAlt": "Brown leather pilot document bags with carry handles on a white background",
+    "comingSoon": false,
+    "image": "document-bag.jpg",
+    "price": 24.95,
+    "priceCents": 2495
+  },
+  {
+    "id": "cessna-poh",
+    "name": "Cessna 150/152/172 POH",
+    "category": "books-manuals",
+    "tagline": "The Pilot's Operating Handbook for the Cessna trainers most students learn in.",
+    "description": "The Pilot's Operating Handbook covering the Cessna 150, 152, and 172: systems, limitations, performance charts, and normal and emergency procedures for the airplanes most training fleets are built on. The book every lesson brief and checkride oral comes back to.",
+    "details": [
+      "Covers Cessna 150, 152, and 172 models",
+      "Systems, limitations, and performance data",
+      "Normal and emergency procedures"
+    ],
+    "label": "Always confirm the handbook edition matches your specific airplane's year and serial range before relying on its data.",
+    "imageAlt": "Open pilot manual showing cockpit diagrams and a numbered key to the figures",
+    "comingSoon": false,
+    "image": "cessna-poh.jpg",
+    "price": 39.95,
+    "priceCents": 3995
+  },
+  {
+    "id": "archer-poh",
+    "name": "Piper Archer POH",
+    "category": "books-manuals",
+    "tagline": "The Pilot's Operating Handbook for the Piper Archer.",
+    "description": "The Pilot's Operating Handbook for the Piper Archer: systems descriptions, limitations, performance charts, and procedures for the four-seat Piper trainer. Required reading for Archer checkouts and the commercial maneuvers flown in it.",
+    "details": [
+      "For the Piper Archer",
+      "Systems, limitations, and performance data",
+      "Normal and emergency procedures"
+    ],
+    "label": "Always confirm the handbook edition matches your specific airplane's year and serial range before relying on its data.",
+    "imageAlt": "Open pilot manual showing cockpit photographs with numbered callouts",
+    "comingSoon": false,
+    "image": "archer-poh.jpg",
+    "price": 44.95,
+    "priceCents": 4495
+  },
+  {
+    "id": "arrow-poh",
+    "name": "Piper Arrow POH",
+    "category": "books-manuals",
+    "tagline": "The Pilot's Operating Handbook for the Piper Arrow — the complex trainer.",
+    "description": "The Pilot's Operating Handbook for the Piper Arrow: retractable gear and constant-speed propeller systems, limitations, performance, and procedures. The reference for complex endorsement training and Arrow checkouts.",
+    "details": [
+      "For the Piper Arrow",
+      "Retractable gear and constant-speed prop systems",
+      "Limitations, performance, and procedures"
+    ],
+    "label": "Always confirm the handbook edition matches your specific airplane's year and serial range before relying on its data.",
+    "imageAlt": "Open pilot manual showing a cockpit instrument panel diagram with numbered callouts",
+    "comingSoon": false,
+    "image": "arrow-poh.jpg",
+    "price": 44.95,
+    "priceCents": 4495
+  },
+  {
+    "id": "maneuver-manuals",
+    "name": "Maneuver Manuals",
+    "category": "books-manuals",
+    "tagline": "Step-by-step maneuver guides, one for each trainer in the fleet.",
+    "description": "Maneuver manuals that break each ACS maneuver down step by step — setup, entry, tolerances, and common errors — for the airplane you actually train in. Pick your airplane: Cessna 150/152, Cessna 172, Piper Archer, or Piper Arrow. Built for pre-lesson briefs and chair flying.",
+    "details": [
+      "One manual per airplane — choose yours",
+      "Step-by-step setup and execution for each maneuver",
+      "ACS tolerances and common errors called out"
+    ],
+    "label": null,
+    "imageAlt": "Student pilot studying an open manual with performance charts and a calculator",
+    "comingSoon": false,
+    "image": "maneuver-manuals.jpg",
+    "price": null,
+    "priceCents": null,
+    "variants": [
+      {
+        "id": "c150-152",
+        "label": "Cessna 150/152",
+        "price": 24.95,
+        "priceCents": 2495
+      },
+      {
+        "id": "c172",
+        "label": "Cessna 172",
+        "price": 24.95,
+        "priceCents": 2495
+      },
+      {
+        "id": "archer",
+        "label": "Piper Archer",
+        "price": 24.95,
+        "priceCents": 2495
+      },
+      {
+        "id": "arrow",
+        "label": "Piper Arrow",
+        "price": 24.95,
+        "priceCents": 2495
+      }
+    ]
+  },
+  {
+    "id": "far-aim",
+    "name": "FAR/AIM Book",
+    "category": "books-manuals",
+    "tagline": "The current-year Federal Aviation Regulations and Aeronautical Information Manual in one volume.",
+    "description": "The current-year FAR/AIM: the Federal Aviation Regulations pilots are tested and held to, plus the Aeronautical Information Manual, in a single printed volume. The most-highlighted book in any pilot's library — keep it current, because the regs change every year.",
+    "details": [
+      "Current-year edition",
+      "Federal Aviation Regulations (14 CFR) for pilots",
+      "Aeronautical Information Manual included"
+    ],
+    "label": null,
+    "imageAlt": "Stack of plain colorful hardcover books with no cover text",
+    "comingSoon": false,
+    "image": "far-aim.jpg",
+    "price": 24.95,
+    "priceCents": 2495
+  },
+  {
+    "id": "phak",
+    "name": "Pilot's Handbook of Aeronautical Knowledge",
+    "category": "books-manuals",
+    "tagline": "The FAA's core knowledge handbook — the foundation every certificate builds on.",
+    "description": "The FAA's Pilot's Handbook of Aeronautical Knowledge (FAA-H-8083-25): aerodynamics, aircraft systems, weather theory, navigation, and aeronautical decision-making. The primary study text for student and private pilots, in a printed edition for the desk and flight bag.",
+    "details": [
+      "FAA handbook FAA-H-8083-25",
+      "Aerodynamics, systems, weather, navigation, ADM",
+      "Core study text for student and private pilots"
+    ],
+    "label": "The FAA publishes this handbook free as a PDF at faa.gov — this is a printed copy for the desk and flight bag.",
+    "imageAlt": "Pilot student in a uniform shirt reading an open handbook",
+    "comingSoon": false,
+    "image": "phak.jpg",
+    "price": 29.95,
+    "priceCents": 2995
+  },
+  {
+    "id": "afh",
+    "name": "Airplane Flying Handbook",
+    "category": "books-manuals",
+    "tagline": "The FAA's how-to-fly handbook: maneuvers and technique, straight from the source.",
+    "description": "The FAA's Airplane Flying Handbook (FAA-H-8083-3): the technique behind takeoffs, landings, stalls, ground reference maneuvers, and emergency operations, explained the way examiners expect to hear it. The companion to every flight lesson.",
+    "details": [
+      "FAA handbook FAA-H-8083-3",
+      "Maneuver technique and common errors",
+      "Covers private through commercial flying skills"
+    ],
+    "label": "The FAA publishes this handbook free as a PDF at faa.gov — this is a printed copy for the desk and flight bag.",
+    "imageAlt": "Pilot student studying an open handbook at a desk by an airport window",
+    "comingSoon": false,
+    "image": "afh.jpg",
+    "price": 24.95,
+    "priceCents": 2495
+  },
+  {
+    "id": "ifh",
+    "name": "Instrument Flying Handbook",
+    "category": "books-manuals",
+    "tagline": "The FAA's instrument flying handbook — the instrument rating's main textbook.",
+    "description": "The FAA's Instrument Flying Handbook (FAA-H-8083-15): the instrument system, attitude instrument flying, navigation, approaches, and IFR procedures. The primary study text for the instrument rating and the IPC refresher.",
+    "details": [
+      "FAA handbook FAA-H-8083-15",
+      "Attitude instrument flying and IFR procedures",
+      "Primary study text for the instrument rating"
+    ],
+    "label": "The FAA publishes this handbook free as a PDF at faa.gov — this is a printed copy for the desk and flight bag.",
+    "imageAlt": "Open manual of printed instrument approach charts",
+    "comingSoon": false,
+    "image": "ifh.jpg",
+    "price": 24.95,
+    "priceCents": 2495
+  },
+  {
+    "id": "weather-handbook",
+    "name": "Aviation Weather Handbook",
+    "category": "books-manuals",
+    "tagline": "The FAA's aviation weather handbook — read the sky like the checkride expects.",
+    "description": "The FAA's Aviation Weather Handbook (FAA-H-8083-28): weather theory, observations, forecasts, and the charts and products pilots brief with. The reference behind every weather question on the written and the oral.",
+    "details": [
+      "FAA handbook FAA-H-8083-28",
+      "Weather theory, observations, and forecasts",
+      "METARs, TAFs, and weather charts explained"
+    ],
+    "label": "The FAA publishes this handbook free as a PDF at faa.gov — this is a printed copy for the desk and flight bag.",
+    "imageAlt": "Open textbook showing weather front and cyclone diagrams",
+    "comingSoon": false,
+    "image": "weather-handbook.jpg",
+    "price": 24.95,
+    "priceCents": 2495
+  },
+  {
+    "id": "acs-private",
+    "name": "Private Pilot ACS",
+    "category": "books-manuals",
+    "tagline": "The Airman Certification Standards for the private pilot checkride.",
+    "description": "The Private Pilot Airman Certification Standards (ACS): every knowledge, risk management, and skill standard the examiner will test, in the FAA's own booklet. Know exactly what the checkride covers before you fly it.",
+    "details": [
+      "FAA Airman Certification Standards booklet",
+      "Knowledge, risk management, and skill standards",
+      "The checkride syllabus, in print"
+    ],
+    "label": "The FAA publishes the ACS free as a PDF at faa.gov — this is a printed copy for the desk and flight bag.",
+    "imageAlt": "Stack of plain white manuals with no cover text",
+    "comingSoon": false,
+    "image": "acs-private.jpg",
+    "price": 9.95,
+    "priceCents": 995
+  },
+  {
+    "id": "acs-instrument",
+    "name": "Instrument Rating ACS",
+    "category": "books-manuals",
+    "tagline": "The Airman Certification Standards for the instrument rating checkride.",
+    "description": "The Instrument Rating Airman Certification Standards (ACS): the knowledge, risk management, and skill standards for the instrument checkride, in the FAA's own booklet. Brief every practice approach against it.",
+    "details": [
+      "FAA Airman Certification Standards booklet",
+      "Knowledge, risk management, and skill standards",
+      "The instrument checkride syllabus, in print"
+    ],
+    "label": "The FAA publishes the ACS free as a PDF at faa.gov — this is a printed copy for the desk and flight bag.",
+    "imageAlt": "Plain beige hardcover book with no cover text on a white background",
+    "comingSoon": false,
+    "image": "acs-instrument.png",
+    "price": 9.95,
+    "priceCents": 995
+  },
+  {
+    "id": "acs-commercial",
+    "name": "Commercial Pilot ACS",
+    "category": "books-manuals",
+    "tagline": "The Airman Certification Standards for the commercial pilot checkride.",
+    "description": "The Commercial Pilot Airman Certification Standards (ACS): every standard the examiner will test for the commercial certificate, in the FAA's own booklet — including the commercial maneuvers and their tolerances.",
+    "details": [
+      "FAA Airman Certification Standards booklet",
+      "Knowledge, risk management, and skill standards",
+      "The commercial checkride syllabus, in print"
+    ],
+    "label": "The FAA publishes the ACS free as a PDF at faa.gov — this is a printed copy for the desk and flight bag.",
+    "imageAlt": "Plain gray hardcover book with no cover text on a white background",
+    "comingSoon": false,
+    "image": "acs-commercial.jpg",
+    "price": 9.95,
+    "priceCents": 995
+  },
+  {
+    "id": "logbook",
+    "name": "Pilot Logbook",
+    "category": "books-manuals",
+    "tagline": "A hardcover logbook with room for a career of flights — and the endorsements that come with them.",
+    "description": "A bound hardcover pilot logbook with the standard column layout: date, aircraft, route, and the time categories that matter for ratings and currency. Durable binding that survives years in a flight bag, and pages that take endorsement stickers cleanly.",
+    "details": [
+      "Hardcover bound logbook",
+      "Standard flight-time column layout",
+      "Pages take endorsement stickers cleanly"
+    ],
+    "label": null,
+    "imageAlt": "Black pilot logbook with a gold wings emblem and Pilot Logbook lettering",
+    "comingSoon": false,
+    "image": "logbook.jpg",
+    "price": 16.95,
+    "priceCents": 1695
+  },
+  {
+    "id": "aircraft-checklists",
+    "name": "Aircraft Checklists",
+    "category": "checklists-tools",
+    "tagline": "Laminated normal-procedures checklists for the Cessna and Piper trainers.",
+    "description": "Printed, laminated checklists for the training fleet — Cessna 150/152, Cessna 172, Piper Archer, and Piper Arrow — covering preflight through shutdown in the order you actually flow through them. Lamination survives the cockpit; the format is big enough to read in turbulence.",
+    "details": [
+      "Checklists for Cessna 150/152, 172, Archer, and Arrow",
+      "Laminated for cockpit durability",
+      "Preflight, takeoff, cruise, landing, and shutdown flows"
+    ],
+    "label": "A checklist never replaces the POH — always verify procedures and speeds against the handbook for your specific airplane.",
+    "imageAlt": "Pilot holding a laminated checklist in a small-airplane cockpit",
+    "comingSoon": false,
+    "image": "aircraft-checklists.jpg",
+    "price": 14.95,
+    "priceCents": 1495
+  },
+  {
+    "id": "e6b",
+    "name": "Plastic E6B Flight Computer",
+    "category": "checklists-tools",
+    "tagline": "The manual flight computer every student learns — and the checkride expects.",
+    "description": "A manual circular slide-rule flight computer for time, speed, distance, fuel, and wind-correction problems. Lightweight plastic, so it survives the bottom of a flight bag. Learn it once and the numbers behind every flight plan stop being magic.",
+    "details": [
+      "Circular slide-rule computer side for time / speed / distance / fuel",
+      "Wind side for groundspeed and wind-correction angle",
+      "Lightweight plastic construction"
+    ],
+    "label": "Training aid — not FAA-approved equipment.",
+    "imageAlt": "Plastic E6B circular flight computer showing its calibrated scales",
+    "comingSoon": false,
+    "image": "e6b.jpg",
+    "price": 16.95,
+    "priceCents": 1695
+  },
+  {
+    "id": "fuel-sump-tester",
+    "name": "Fuel Sump Tester",
+    "category": "checklists-tools",
+    "tagline": "The clear sampler cup for checking fuel for water and contamination on every preflight.",
+    "description": "A clear fuel sump tester with a built-in drain-valve pin: push it up into the sump drain, draw a sample, and check for water, debris, and the right fuel color and smell. The preflight habit that catches contaminated fuel on the ground instead of in the climb.",
+    "details": [
+      "Clear cup — see water and sediment at a glance",
+      "Built-in pin actuates standard sump drains",
+      "Compact size for the flight bag side pocket"
+    ],
+    "label": null,
+    "imageAlt": "Clear fuel sump tester cup held under an aircraft wing drain during a preflight fuel check",
+    "comingSoon": false,
+    "image": "fuel-sump-tester.jpg",
+    "price": 12.95,
+    "priceCents": 1295
+  },
+  {
+    "id": "navigation-plotter",
+    "name": "Navigation Plotter",
+    "category": "checklists-tools",
+    "tagline": "The chart plotter for measuring courses and distances the way the written exam still asks.",
+    "description": "A clear navigation plotter for sectional charts: nautical and statute scales for distance, plus a protractor for true course. Required kit for cross-country planning and the knowledge test's chart questions — and a backup when the tablet dies.",
+    "details": [
+      "NM and SM scales for sectional charts",
+      "Protractor for measuring true course",
+      "Clear, flexible chart-friendly plastic"
+    ],
+    "label": null,
+    "imageAlt": "Clear aviation navigation plotter with ruler scales and a rotating protractor",
+    "comingSoon": false,
+    "image": "navigation-plotter.jpg",
+    "price": 12.95,
+    "priceCents": 1295
+  },
+  {
+    "id": "pilot-pens",
+    "name": "Pilot Pens",
+    "category": "checklists-tools",
+    "tagline": "A pack of smooth ballpoints that clip to the kneeboard and write upside-down in a bumpy cockpit.",
+    "description": "A pack of ballpoint pens chosen for cockpit work: clips that hold onto a kneeboard or shirt pocket, ink that writes at odd angles, and enough pens in the pack that losing one to the floor rails isn't a crisis.",
+    "details": [
+      "Multi-pen pack",
+      "Pocket and kneeboard clips",
+      "Smooth ballpoint ink for in-flight notes"
+    ],
+    "label": null,
+    "imageAlt": "Set of ballpoint pens in assorted colors on a white background",
+    "comingSoon": false,
+    "image": "pilot-pens.jpg",
+    "price": 9.95,
+    "priceCents": 995
+  },
+  {
+    "id": "co-detector-cards",
+    "name": "CO Detector Cards",
+    "category": "checklists-tools",
+    "tagline": "Carbon monoxide detector cards for the cockpit — stick one where you'll see it change.",
+    "description": "Disposable carbon monoxide detector cards for the panel or visor: the sensor spot darkens when CO is present, giving older training aircraft a basic CO warning where no electronic detector is installed. Replace on the schedule printed on the card.",
+    "details": [
+      "Sensor spot darkens in the presence of CO",
+      "Adhesive back for panel or visor",
+      "Replacement schedule printed on the card"
+    ],
+    "label": "A passive card is a basic warning aid, not a substitute for a maintained electronic CO detector where one is available.",
+    "imageAlt": "Carbon monoxide detector card with an orange sensor spot and a Normal, Caution, Danger scale",
+    "comingSoon": false,
+    "image": "co-detector-cards.jpg",
+    "price": 9.95,
+    "priceCents": 995
+  },
+  {
+    "id": "sticky-notes",
+    "name": "Sticky Notes",
+    "category": "checklists-tools",
+    "tagline": "The humble cockpit essential: ATIS letters, squawks, and reminders that stay where you stuck them.",
+    "description": "Pads of sticky notes for the cockpit and the briefing room: jot the ATIS code, copy a clearance, flag a logbook page, or leave the next renter a note about the sticky starter. Cheap, light, endlessly useful.",
+    "details": [
+      "Standard square sticky note pads",
+      "For ATIS, clearances, and reminders",
+      "Keep a pad in the flight bag and one in the briefing room"
+    ],
+    "label": null,
+    "imageAlt": "Stacks of colorful sticky note pads on a white background",
+    "comingSoon": false,
+    "image": "sticky-notes.jpg",
+    "price": 6.95,
+    "priceCents": 695
+  },
+  {
+    "id": "uniform-shirt",
+    "name": "Pilot Uniform Shirt",
+    "category": "uniforms-apparel",
+    "tagline": "The classic white pilot shirt: epaulet tabs, two chest pockets, ready for stripes and wings.",
+    "description": "A white short-sleeve pilot uniform shirt with shoulder epaulet tabs for rank stripes, two buttoned chest pockets, and a tailored fit that reads professional on the ramp and in the interview. The standard shirt for flight school, charter, and airline uniforms.",
+    "details": [
+      "White short-sleeve uniform shirt",
+      "Shoulder epaulet tabs for rank stripes",
+      "Two buttoned chest pockets"
+    ],
+    "label": null,
+    "imageAlt": "White short-sleeve pilot uniform shirt with epaulet tabs and two chest pockets",
+    "comingSoon": false,
+    "image": "uniform-shirt.jpg",
+    "price": 34.95,
+    "priceCents": 3495
+  },
+  {
+    "id": "uniform-pants",
+    "name": "Uniform Pants",
+    "category": "uniforms-apparel",
+    "tagline": "Dark uniform trousers cut to match the pilot shirt — flat front, all-day comfort.",
+    "description": "Dark flat-front uniform pants in a wrinkle-resistant fabric that holds a crease through a full duty day. Cut to pair with the pilot uniform shirt and belt for a complete, professional uniform.",
+    "details": [
+      "Dark flat-front uniform trousers",
+      "Wrinkle-resistant, crease-holding fabric",
+      "Pairs with the uniform shirt and belt"
+    ],
+    "label": null,
+    "imageAlt": "Dark navy flat-front uniform trousers on a white background",
+    "comingSoon": false,
+    "image": "uniform-pants.jpg",
+    "price": 39.95,
+    "priceCents": 3995
+  },
+  {
+    "id": "uniform-belt",
+    "name": "Uniform Belt",
+    "category": "uniforms-apparel",
+    "tagline": "A plain dark belt with a simple buckle — the finishing piece of the uniform.",
+    "description": "A dark uniform belt with a plain metal buckle: no logos, no ornamentation, just the clean finish a pilot uniform needs. Sized to trim to fit.",
+    "details": [
+      "Dark belt with plain metal buckle",
+      "Unbranded, uniform-appropriate finish",
+      "Trims to fit"
+    ],
+    "label": null,
+    "imageAlt": "Black uniform belt with a plain silver buckle, coiled on a light background",
+    "comingSoon": false,
+    "image": "uniform-belt.jpg",
+    "price": 14.95,
+    "priceCents": 1495
+  },
+  {
+    "id": "polo-shirt",
+    "name": "Polo Shirt",
+    "category": "uniforms-apparel",
+    "tagline": "A clean polo for flight-school days when the full uniform stays in the closet.",
+    "description": "A plain polo shirt for instructors and school staff: professional enough for the front desk and a discovery flight, comfortable enough for a full day of lessons in a warm cockpit.",
+    "details": [
+      "Classic polo collar with button placket",
+      "Breathable knit for warm cockpits",
+      "Plain, unbranded — ready for school embroidery"
+    ],
+    "label": null,
+    "imageAlt": "Plain white polo shirt on a white background",
+    "comingSoon": false,
+    "image": "polo-shirt.png",
+    "price": 24.95,
+    "priceCents": 2495
+  },
+  {
+    "id": "custom-aviator-tshirt",
+    "name": "Custom Printed Aviator T-Shirt",
+    "category": "uniforms-apparel",
+    "tagline": "Your design or text, printed on a tee — squadron shirts, solo celebrations, inside jokes.",
+    "description": "A t-shirt printed with your own design or text: a flight-school class shirt, a first-solo celebration, or your own aviator artwork. After checkout, email your design file or the exact text you want printed to flyaeriq@gmail.com with your order number — printing starts once the design is confirmed.",
+    "details": [
+      "Printed with your design or text",
+      "Send the artwork or wording by email with your order number after checkout",
+      "Soft cotton-blend tee"
+    ],
+    "label": "Custom printing: your design is confirmed by email before printing, so check the confirmation carefully — printed shirts are made to order.",
+    "imageAlt": "Plain white crew-neck t-shirt, blank for custom printing, on a white background",
+    "comingSoon": false,
+    "image": "custom-aviator-tshirt.png",
+    "price": 24.95,
+    "priceCents": 2495
+  },
+  {
+    "id": "uniform-undershirt",
+    "name": "Pilot Uniform Undershirt",
+    "category": "uniforms-apparel",
+    "tagline": "A plain white undershirt that keeps the uniform shirt looking sharp all day.",
+    "description": "A plain white crew-neck undershirt to wear underneath the pilot uniform shirt: it keeps the white shirt crisp through a long duty day, absorbs the ramp heat, and means the uniform shirt survives more wears between washes.",
+    "details": [
+      "Plain white crew-neck undershirt",
+      "Made to wear under the pilot uniform shirt",
+      "Soft, breathable cotton blend"
+    ],
+    "label": null,
+    "imageAlt": "Man wearing a plain white crew-neck undershirt",
+    "comingSoon": false,
+    "image": "uniform-undershirt.jpg",
+    "price": 14.95,
+    "priceCents": 1495
+  },
+  {
+    "id": "epaulets",
+    "name": "Epaulets",
+    "category": "uniforms-apparel",
+    "tagline": "Shoulder stripes that slide onto the uniform shirt's epaulet tabs.",
+    "description": "Slide-on epaulet shoulder boards with rank stripes for the pilot uniform shirt. The stripes that mark the step from student to instructor to captain — pick them up when the promotion lands.",
+    "details": [
+      "Slide-on shoulder boards, sold as a pair",
+      "Fits standard uniform shirt epaulet tabs",
+      "Rank stripe styling"
+    ],
+    "label": null,
+    "imageAlt": "Black epaulet with two gold stripes on the shoulder of a white uniform shirt",
+    "comingSoon": false,
+    "image": "epaulets.jpg",
+    "price": 12.95,
+    "priceCents": 1295
+  },
+  {
+    "id": "uniform-tie",
+    "name": "Uniform Tie",
+    "category": "uniforms-apparel",
+    "tagline": "A plain dark necktie that completes the pilot uniform.",
+    "description": "A plain dark necktie in the standard uniform style: solid color, no logos or patterns, the right length and width to sit correctly with the pilot uniform shirt.",
+    "details": [
+      "Plain dark necktie",
+      "Solid color — no logos or patterns",
+      "Standard uniform length and width"
+    ],
+    "label": null,
+    "imageAlt": "Plain black necktie, rolled, on a white background",
+    "comingSoon": false,
+    "image": "uniform-tie.jpg",
+    "price": 14.95,
+    "priceCents": 1495
+  },
+  {
+    "id": "wings-pin",
+    "name": "Pilot Wings Pin",
+    "category": "uniforms-apparel",
+    "tagline": "A generic pilot wings pin for the uniform shirt or flight bag.",
+    "description": "A metal pilot wings pin in a classic generic wings design, for a uniform shirt, jacket, or flight bag. A traditional gift for a first solo or a checkride pass.",
+    "details": [
+      "Metal wings pin with clutch backing",
+      "Generic wings design",
+      "For uniform shirts, jackets, and bags"
+    ],
+    "label": "Generic pilot wings design — not an official airline or military insignia replica.",
+    "imageAlt": "Gold and silver pilot wings pins with a star center",
+    "comingSoon": false,
+    "image": "wings-pin.jpg",
+    "price": 9.95,
+    "priceCents": 995
+  },
+  {
+    "id": "cfi-stickers",
+    "name": "CFI Endorsement Sticker Pack",
+    "category": "cfi-training",
+    "tagline": "Print at home on Avery 5162 — fourteen 4″ × 1-1/3″ labels per Letter sheet, with your CFI details.",
+    "description": "Formatted exactly for Avery 5162 label sheets, so you can print your endorsements at home on a standard label sheet and peel them straight into a student logbook. Enter your name, certificate number, and expiry below, choose which endorsements go on the sheet, and watch the preview update at the true Avery 5162 layout — 2 across × 7 down on US Letter. Open the print sheet, load a blank Avery 5162 sheet, and print at 100% (Actual size). Peel, sign, stick: no handwriting a paragraph in a cramped logbook margin ever again.",
+    "details": [
+      "Avery 5162 format: fourteen 4″ × 1-1/3″ labels per sheet — 2 across × 7 down on US Letter (8.5″ × 11″)",
+      "Layout matched to the Avery 5162 template: 0.83″ top & bottom margins, 0.156″ side margins, 0.1875″ centre gap — print at 100% / Actual size, not Fit to page",
+      "Works with Avery 5162 / 8162 / 5262 and compatible 4″ × 1-1/3″ sheets — use the laser or inkjet version that matches your printer",
+      "Your CFI name, certificate number, and expiry printed on every label",
+      "You choose which endorsements appear on the sheet",
+      "Signature line left blank for your hand-signed signature"
+    ],
+    "label": "Endorsement wording follows FAA Advisory Circular 61-65. You remain responsible for the accuracy of every endorsement and for signing it yourself.",
+    "imageAlt": "",
+    "comingSoon": false,
+    "image": null,
+    "price": 14.95,
+    "priceCents": 1495
+  },
+  {
+    "id": "ifr-hood-foggles",
+    "name": "IFR Hood & Foggles",
+    "category": "cfi-training",
+    "tagline": "View-limiting training aids for instrument students — eyes on the gauges, not the horizon.",
+    "description": "A view-limiting set for instrument training: an IFR hood and frosted foggles that block the outside view while leaving the instrument panel visible, so students fly by reference to instruments under simulated IMC, exactly as 14 CFR § 61.57 and the instrument ACS expect.",
+    "details": [
+      "IFR hood and frosted foggles included",
+      "Blocks outside references, keeps the panel visible",
+      "For simulated instrument training with an instructor or safety pilot"
+    ],
+    "label": "Training aid for simulated instrument flight — use only with a qualified instructor or safety pilot, as the regulations require.",
+    "imageAlt": "Black IFR view-limiting training hood with a clear lower section, on a white background",
+    "comingSoon": false,
+    "image": "ifr-hood-foggles.jpg",
+    "price": 21.95,
+    "priceCents": 2195
+  },
+  {
+    "id": "six-pack-covers",
+    "name": "Six-Pack Instrument Covers",
+    "category": "cfi-training",
+    "tagline": "Steam-gauge covers for partial-panel training — fail an instrument, keep the lesson going.",
+    "description": "A set of covers sized for the standard six-pack of steam-gauge flight instruments. Instructors stick them over the attitude indicator or heading indicator to simulate a vacuum failure and teach partial-panel flying — no more sticky notes that fall off in turbulence.",
+    "details": [
+      "Covers sized for standard round steam gauges",
+      "Simulate vacuum and instrument failures",
+      "Reusable — built for repeated partial-panel lessons"
+    ],
+    "label": null,
+    "imageAlt": "Close-up of the six-pack of round flight instruments on an aircraft panel",
+    "comingSoon": false,
+    "image": "six-pack-covers.jpg",
+    "price": 12.95,
+    "priceCents": 1295
+  },
+  {
+    "id": "demo-model-airplane",
+    "name": "Demo Model Airplane",
+    "category": "cfi-training",
+    "tagline": "A small model airplane for teaching maneuvers on the ground, where learning is cheap.",
+    "description": "A handheld model airplane for ground lessons: demonstrate bank, pitch, yaw, and maneuver geometry at the briefing table before burning Hobbs time on it. Every CFI ends up wanting one — this is the one that lives in the flight bag.",
+    "details": [
+      "Handheld size for briefing-table demos",
+      "Show pitch, bank, and yaw axes clearly",
+      "Durable construction for daily instructor use"
+    ],
+    "label": null,
+    "imageAlt": "Hand holding a small colorful model airplane",
+    "comingSoon": false,
+    "image": "demo-model-airplane.jpg",
+    "price": 19.95,
+    "priceCents": 1995
+  },
+  {
+    "id": "rbf-keychain",
+    "name": "“Remove Before Flight” Keychain",
+    "category": "gifts-accessories",
+    "tagline": "The classic red tag, for your keys instead of a pitot tube.",
+    "description": "A generic red woven “Remove Before Flight” tag with embroidered lettering and a split key ring. No airline logos, no branding — just the tag every pilot recognizes. Buy one, or the 3-pack for the flight bag, car keys, and a gift.",
+    "details": [
+      "Red woven fabric tag with embroidered text",
+      "Generic design — no airline logos",
+      "Split metal key ring"
+    ],
+    "label": null,
+    "imageAlt": "Red woven Remove Before Flight keychain tag",
+    "comingSoon": false,
+    "image": "rbf-keychain.jpg",
+    "price": null,
+    "priceCents": null,
+    "variants": [
+      {
+        "id": "single",
+        "label": "Single",
+        "price": 6.95,
+        "priceCents": 695
+      },
+      {
+        "id": "3pack",
+        "label": "3-pack",
+        "price": 14.95,
+        "priceCents": 1495
+      }
+    ]
+  },
+  {
+    "id": "opener-keychain",
+    "name": "Airplane Bottle-Opener Keychain",
+    "category": "gifts-accessories",
+    "tagline": "A zinc-alloy airplane that also opens the post-flight beverage.",
+    "description": "A solid zinc-alloy airplane keychain that doubles as a bottle opener. Weighty enough to find by feel in a flight bag, small enough for everyday carry.",
+    "details": [
+      "Zinc-alloy airplane body",
+      "Built-in bottle opener",
+      "Split metal key ring"
+    ],
+    "label": null,
+    "imageAlt": "Airplane-shaped bottle-opener keychain in zinc alloy",
+    "comingSoon": false,
+    "image": "opener-keychain.jpg",
+    "price": 9.95,
+    "priceCents": 995
+  },
+  {
+    "id": "enamel-pin",
+    "name": "Airplane Enamel Pin",
+    "category": "gifts-accessories",
+    "tagline": "A gold-tone airplane for the lapel, lanyard, or flight bag.",
+    "description": "A gold-tone enamel lapel pin in a generic airplane shape — no airline or military insignia. A small, easy gift for a new solo student or a checkride pass.",
+    "details": [
+      "Gold-tone finish with enamel fill",
+      "Generic airplane design — no airline or military insignia",
+      "Butterfly clutch backing"
+    ],
+    "label": null,
+    "imageAlt": "Gold-tone airplane enamel lapel pin",
+    "comingSoon": false,
+    "image": "enamel-pin.jpg",
+    "price": 9.95,
+    "priceCents": 995
+  },
+  {
+    "id": "tin-sign",
+    "name": "Vintage Aviation Tin Sign",
+    "category": "gifts-accessories",
+    "tagline": "Retro hangar art for the wall of the room you brief in.",
+    "description": "A 20 × 30 cm retro metal wall sign with generic vintage airplane artwork. Pre-drilled corners for hanging in the hangar, office, or dorm room. The artwork is a generic airplane scene — no airline liveries or logos.",
+    "details": [
+      "20 × 30 cm metal tin sign",
+      "Generic vintage airplane artwork",
+      "Pre-drilled mounting holes"
+    ],
+    "label": null,
+    "imageAlt": "Vintage aviation tin sign with retro airplane artwork",
+    "comingSoon": false,
+    "image": "tin-sign.jpg",
+    "price": 16.95,
+    "priceCents": 1695
+  }
+]
