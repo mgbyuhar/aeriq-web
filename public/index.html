@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="AERIQ — pilot gear, FAA handbooks, checklists, uniforms and CFI training aids. Pay securely by card through Stripe." />
+    <title>AERIQ — Gear for Smart Pilots</title>
+    <style>
+      :root {
+        --bg: #f5f5f7;
+        --surface: #ffffff;
+        --surface-2: #eef0f3;
+        --ink: #1d1d1f;
+        --ink-2: #515154;
+        --ink-3: #6e6e73;
+        --line: #d9dce1;
+        --blue: #0071e3;
+        --blue-dark: #0060c9;
+        --nav-bg: rgba(22, 24, 28, 0.92);
+        --nav-ink: #f5f5f7;
+        --radius: 18px;
+        --shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --surface: #1d1d1f;
+          --surface-2: #2a2a2d;
+          --ink: #f5f5f7;
+          --ink-2: #c9c9cd;
+          --ink-3: #98989d;
+          --line: #38383b;
+          --blue: #2997ff;
+          --blue-dark: #2997ff;
+          --shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0; background: var(--bg); color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+        -webkit-font-smoothing: antialiased; line-height: 1.5;
+      }
+      a { color: var(--blue); }
+      img { display: block; max-width: 100%; }
+      .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px 64px; }
+
+      /* Nav */
+      .nav { position: sticky; top: 0; z-index: 50; background: var(--nav-bg); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); color: var(--nav-ink); }
+      .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; gap: 22px; min-height: 52px; }
+      .wordmark { font-size: 21px; font-weight: 700; letter-spacing: 0.14em; color: var(--nav-ink); text-decoration: none; }
+      .wordmark span { color: #ff8a3d; }
+      .nav-links { display: flex; gap: 4px; flex-wrap: wrap; margin-left: auto; align-items: center; }
+      .nav-links a { color: var(--nav-ink); text-decoration: none; font-size: 13.5px; padding: 10px; border-radius: 8px; opacity: 0.88; }
+      .cart-btn { background: var(--blue); color: #fff; border: 0; border-radius: 999px; padding: 8px 16px; font-size: 13.5px; font-weight: 600; cursor: pointer; min-height: 36px; }
+      .cart-count { background: #fff; color: var(--blue-dark); border-radius: 999px; padding: 0 7px; margin-left: 6px; font-size: 12px; }
+
+      /* Hero */
+      .hero { text-align: center; padding: 56px 0 8px; }
+      .hero h1 { font-size: clamp(34px, 6vw, 56px); letter-spacing: -0.02em; margin: 0 0 12px; }
+      .hero .lede { font-size: clamp(16px, 2.4vw, 20px); color: var(--ink-2); max-width: 640px; margin: 0 auto; }
+      .how { max-width: 720px; margin: 28px auto 0; color: var(--ink-2); font-size: 15px; text-align: center; }
+
+      /* Controls */
+      .controls { position: sticky; top: 52px; z-index: 40; background: var(--bg); padding: 14px 0 10px; }
+      .tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+      .tab { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 8px 14px; font-size: 13.5px; cursor: pointer; min-height: 38px; }
+      .tab[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+      .tab .n { opacity: 0.6; font-size: 12px; margin-left: 4px; }
+      .search-row { margin-top: 10px; }
+      .search-row input { width: 100%; padding: 12px 16px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 15px; min-height: 44px; }
+
+      /* Catalog */
+      .cat-head { margin: 34px 0 4px; font-size: 26px; letter-spacing: -0.01em; }
+      .cat-blurb { color: var(--ink-3); margin: 0 0 16px; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
+      .card { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+      .card-photo { aspect-ratio: 1 / 1; background: #fff; overflow: hidden; }
+      .card-photo img { width: 100%; height: 100%; object-fit: cover; }
+      .card-body { padding: 16px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+      .card-body h3 { margin: 0; font-size: 17px; line-height: 1.3; }
+      .tagline { margin: 0; color: var(--ink-2); font-size: 13.5px; }
+      .variant-row label { display: block; font-size: 12.5px; color: var(--ink-3); margin-bottom: 4px; }
+      .variant-row select { width: 100%; padding: 9px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 14px; min-height: 40px; }
+      .price { font-size: 17px; font-weight: 700; }
+      .add-cart { margin-top: auto; background: var(--blue); color: #fff; border: 0; border-radius: 999px; padding: 11px 16px; font-size: 14.5px; font-weight: 600; cursor: pointer; min-height: 44px; }
+      .add-cart:hover { background: var(--blue-dark); }
+      .soon-badge { margin-top: auto; display: inline-block; background: var(--surface-2); color: var(--ink-2); border-radius: 999px; padding: 9px 14px; font-size: 13px; font-weight: 600; text-align: center; }
+      .buy-hint { margin: 0; font-size: 12.5px; color: var(--ink-3); }
+      .details-toggle { background: none; border: 0; color: var(--blue); font-size: 13.5px; cursor: pointer; text-align: left; padding: 4px 0; min-height: 32px; }
+      .details { display: none; font-size: 13.5px; color: var(--ink-2); }
+      .details.open { display: block; }
+      .details ul { margin: 6px 0; padding-left: 18px; }
+      .label-note { background: var(--surface-2); border-radius: 10px; padding: 8px 10px; font-size: 12.5px; }
+      .no-results { display: none; color: var(--ink-3); text-align: center; padding: 30px 0; }
+
+      /* Sticker pack tile (designed preview, as in the original shop — the preview is the product) */
+      .sticker-tile { aspect-ratio: 1 / 1; background: #16283f; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+      .sticker-sheet { background: #fff; border-radius: 6px; padding: 10px; flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+      .sticker-label { border: 1.5px dashed #9db4cc; border-radius: 5px; padding: 5px 7px; font-size: 8.5px; line-height: 1.35; color: #33475e; overflow: hidden; }
+      .sticker-label b { display: block; font-size: 9px; color: #16283f; }
+      .sticker-tile .tile-cap { color: #cfe0f2; font-size: 12.5px; text-align: center; }
+
+      /* Cart */
+      .panel { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; margin-top: 40px; }
+      .panel h2 { margin: 0 0 6px; font-size: 24px; }
+      .panel .sub { color: var(--ink-3); margin: 0 0 14px; font-size: 14px; }
+      .cart-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+      .cart-row .nm { flex: 1 1 200px; font-size: 14.5px; }
+      .cart-row .nm .unit { display: block; color: var(--ink-3); font-size: 12.5px; }
+      .qty { display: inline-flex; align-items: center; gap: 8px; }
+      .qty button { width: 32px; height: 32px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 16px; cursor: pointer; }
+      .remove-btn { background: none; border: 0; color: var(--blue); cursor: pointer; font-size: 13px; }
+      .cart-row .line-total { font-weight: 700; min-width: 70px; text-align: right; }
+      .total-row { display: flex; justify-content: space-between; font-size: 15px; padding: 4px 0; }
+      .total-row.grand { font-size: 18px; font-weight: 700; }
+      .cart-note { color: var(--ink-3); font-size: 13px; }
+      .checkout-btn { width: 100%; background: var(--blue); color: #fff; border: 0; border-radius: 999px; padding: 14px; font-size: 16px; font-weight: 700; cursor: pointer; min-height: 50px; margin-top: 10px; }
+      .checkout-btn:disabled { opacity: 0.55; cursor: default; }
+      .clear-btn { width: 100%; background: none; border: 0; color: var(--blue); padding: 10px; cursor: pointer; font-size: 14px; }
+      .cart-empty { color: var(--ink-3); }
+      .checkout-error { display: none; background: #fdecea; color: #8a1f11; border-radius: 10px; padding: 10px 12px; font-size: 14px; margin-top: 10px; }
+      @media (prefers-color-scheme: dark) { .checkout-error { background: #3a1512; color: #f2b8ae; } }
+
+      /* Info sections */
+      .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-top: 40px; }
+      .info-card { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; }
+      .info-card h2, .about h2 { margin-top: 0; font-size: 22px; }
+      .about { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; margin-top: 18px; }
+      footer { margin-top: 44px; border-top: 1px solid var(--line); padding-top: 18px; color: var(--ink-3); font-size: 13.5px; }
+      .foot-inner { display: flex; gap: 18px; flex-wrap: wrap; }
+      .toast { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%) translateY(20px); background: var(--ink); color: var(--bg); padding: 10px 18px; border-radius: 999px; font-size: 14px; opacity: 0; pointer-events: none; transition: all 0.25s; z-index: 99; }
+      .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="wordmark" href="#top">AERIQ<span>.</span></a>
+        <div class="nav-links">
+          <a href="#shop">Shop</a>
+          <a href="#shipping">Shipping</a>
+          <a href="#returns">Returns</a>
+          <a href="#about">About</a>
+          <button type="button" class="cart-btn" id="cartBtn">Cart <span class="cart-count" id="cartCount">0</span></button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="wrap" id="top">
+      <section class="hero">
+        <h1>Gear for smart pilots.</h1>
+        <p class="lede">Flight gear, FAA handbooks, checklists, uniforms, and CFI training aids — chosen by a working Gold Seal CFI, and paid for securely by card through Stripe.</p>
+        <p class="how">Add what you want to the cart, then check out: Stripe's secure payment page opens with your cart total already filled in — nothing to type or add up. Card details go to Stripe, never to this site.</p>
+      </section>
+
+      <section id="shop">
+        <div class="controls">
+          <div class="tabs" role="tablist" aria-label="Product categories" id="tabs"></div>
+          <div class="search-row">
+            <input type="search" id="search" placeholder="Search the shop — try “logbook” or “headset”" aria-label="Search products" />
+          </div>
+        </div>
+        <div id="catalog"></div>
+        <p class="no-results" id="noResults">Nothing matches that search. Try a shorter word, or browse a category above.</p>
+      </section>
+
+      <section class="panel" id="cart" aria-label="Shopping cart">
+        <h2>Your cart</h2>
+        <p class="sub">Everything you added, in one place — adjust quantities here, then check out.</p>
+        <div id="cartItems">
+          <p class="cart-empty">Your cart is empty.<br />Browse the shop and add what you need.</p>
+        </div>
+        <div style="border-top:1px solid var(--line); margin-top:16px; padding-top:14px;">
+          <div class="total-row"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+          <div class="total-row grand"><span>Total</span><span id="cartTotal">$0.00</span></div>
+          <p class="cart-note">Checkout opens Stripe's secure payment page with the cart total above already filled in. Shipping address is collected on the Stripe page. For the CFI sticker pack, Stripe also asks for your CFI name, certificate number &amp; expiry — that is what gets printed on your labels.</p>
+          <button type="button" class="checkout-btn" id="checkoutBtn">Checkout — $0.00</button>
+          <div class="checkout-error" id="checkoutError" role="alert"></div>
+          <button type="button" class="clear-btn" id="clearCartBtn">Clear cart</button>
+        </div>
+      </section>
+
+      <div class="info-grid">
+        <section class="info-card" id="shipping">
+          <h2>Shipping</h2>
+          <p>Orders are prepared once payment is confirmed on Stripe. Items ship from our supplier: typically 5–12 days with expedited shipping or 15–30 days standard, to US addresses.</p>
+          <p>Import duty may apply on low-value orders, since the US de minimis exemption ended in August 2025.</p>
+          <p>If an item hasn't arrived within 35 days of payment, email <a href="mailto:flyaeriq@gmail.com">flyaeriq@gmail.com</a> and we'll track it down or make it right.</p>
+        </section>
+        <section class="info-card" id="returns">
+          <h2>Returns &amp; refunds</h2>
+          <p>Changed your mind? Email <a href="mailto:flyaeriq@gmail.com">flyaeriq@gmail.com</a> within 30 days of delivery and we'll arrange a return for a refund to your original payment method — items must be unused and in their original packaging, and return shipping is on us if the item arrived damaged or wrong.</p>
+          <p>Two exceptions: printed books and manuals must be unmarked, and custom items (the printed aviator T-shirt, and CFI endorsement sheets printed with your details) can only be returned if they arrive damaged or with an error. Refunds are issued through Stripe once the return is on its way back.</p>
+        </section>
+      </div>
+
+      <section class="about" id="about">
+        <h2>About AERIQ</h2>
+        <p>AERIQ is run by a working FAA Gold Seal flight instructor in Sacramento, CA. Everything in the shop is gear a CFI actually reaches for: the kneeboard and E6B students train with, the handbooks and ACS booklets checkrides are built on, the uniform pieces instructors wear, and the endorsement labels that save handwriting a paragraph into a cramped logbook margin. Questions? Contact us at <a href="mailto:flyaeriq@gmail.com">flyaeriq@gmail.com</a>.</p>
+      </section>
+
+      <footer>
+        <div class="foot-inner">
+          <span><strong>AERIQ</strong> · Sacramento, CA</span>
+          <a href="mailto:flyaeriq@gmail.com">flyaeriq@gmail.com</a>
+          <span>Payments processed securely by Stripe.</span>
+        </div>
+      </footer>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      var PRODUCTS = [];
+      var CATEGORIES = [];
+      var ENDORSEMENTS = [];
+      var activeCat = "all";
+      var query = "";
+      // Cart: purchasable id -> qty. Purchasable id is the product id, or
+      // "productId:variantId" for a chosen variant.
+      var cart = {};
+      try { cart = JSON.parse(localStorage.getItem("aeriq-cart") || "{}") || {}; } catch (e) { cart = {}; }
+
+      function esc(s) {
+        return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+        });
+      }
+      function fmt(cents) { return "$" + (cents / 100).toFixed(2); }
+      function productById(id) { return PRODUCTS.filter(function (p) { return p.id === id; })[0]; }
+
+      // Resolve a purchasable id to {name, priceCents} from the catalog.
+      function purchasable(id) {
+        var parts = id.split(":");
+        var p = productById(parts[0]);
+        if (!p) return null;
+        if (parts.length === 2) {
+          var v = (p.variants || []).filter(function (x) { return x.id === parts[1]; })[0];
+          if (!v) return null;
+          return { name: p.name + " — " + v.label, priceCents: v.priceCents };
+        }
+        if (p.comingSoon || p.priceCents == null) return null;
+        return { name: p.name, priceCents: p.priceCents };
+      }
+      function selectedVariantId(p) {
+        var sel = document.querySelector('select[data-variant-for="' + p.id + '"]');
+        return sel ? sel.value : (p.variants ? p.variants[0].id : null);
+      }
+      function currentPriceCents(p) {
+        if (p.variants) {
+          var vid = selectedVariantId(p);
+          var v = p.variants.filter(function (x) { return x.id === vid; })[0];
+          return v ? v.priceCents : p.variants[0].priceCents;
+        }
+        return p.priceCents;
+      }
+
+      function stickerTile() {
+        var labels = ENDORSEMENTS.slice(0, 6).map(function (e) {
+          return '<div class="sticker-label"><b>' + esc(e.label) + "</b>" + esc(e.ref) +
+            "<br>CFI: Your Name · Cert. No. · Exp.</div>";
+        }).join("");
+        return '<div class="sticker-tile"><div class="sticker-sheet">' + labels + "</div>" +
+          '<div class="tile-cap">Avery 5162 sheet preview — 14 labels, printed with your CFI details</div></div>';
+      }
+
+      function cardHTML(p) {
+        var media = p.image
+          ? '<div class="card-photo"><img src="img/' + esc(p.image) + '" alt="' + esc(p.imageAlt || p.name) + '" loading="lazy" /></div>'
+          : stickerTile();
+        var variantRow = "";
+        if (p.variants) {
+          var opts = p.variants.map(function (v) {
+            return '<option value="' + esc(v.id) + '">' + esc(v.label) + " — " + fmt(v.priceCents) + "</option>";
+          }).join("");
+          variantRow = '<div class="variant-row"><label for="var-' + p.id + '">Choose yours</label>' +
+            '<select id="var-' + p.id + '" data-variant-for="' + p.id + '">' + opts + "</select></div>";
+        }
+        var buyBlock;
+        if (p.comingSoon) {
+          buyBlock = '<span class="soon-badge">Coming soon — not yet orderable</span>';
+        } else {
+          var price = currentPriceCents(p);
+          buyBlock = '<div><span class="price" data-price-for="' + p.id + '">' + fmt(price) + "</span></div>" +
+            '<button type="button" class="add-cart" data-add-to-cart="' + p.id + '">Add to Cart — <span data-price-for="' + p.id + '">' + fmt(price) + "</span></button>";
+          if (p.id === "cfi-stickers") {
+            buyBlock += '<p class="buy-hint">At Stripe checkout you will be asked for your CFI name, certificate number &amp; expiry — that is what gets printed on your labels.</p>';
+          }
+          if (p.id === "custom-aviator-tshirt") {
+            buyBlock += '<p class="buy-hint">After paying, email your design or exact text with your order number to flyaeriq@gmail.com — printing starts once it is confirmed.</p>';
+          }
+        }
+        var details = '<p>' + esc(p.description) + "</p>";
+        if (p.details && p.details.length) {
+          details += "<ul>" + p.details.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul>";
+        }
+        if (p.id === "cfi-stickers") {
+          details += "<p><strong>Endorsements the pack covers:</strong></p><ul>" +
+            ENDORSEMENTS.map(function (e) { return "<li>" + esc(e.label) + " — " + esc(e.ref) + "</li>"; }).join("") + "</ul>";
+        }
+        if (p.label) details += '<p class="label-note">' + esc(p.label) + "</p>";
+
+        return '<article class="card" data-id="' + p.id + '">' + media +
+          '<div class="card-body"><h3>' + esc(p.name) + '</h3><p class="tagline">' + esc(p.tagline) + "</p>" +
+          variantRow + buyBlock +
+          '<button type="button" class="details-toggle" data-toggle="' + p.id + '" aria-expanded="false">Details ▾</button>' +
+          '<div class="details" id="details-' + p.id + '">' + details + "</div></div></article>";
+      }
+
+      function matches(p) {
+        if (!query) return true;
+        var hay = (p.name + " " + (p.tagline || "") + " " + (p.description || "")).toLowerCase();
+        return hay.indexOf(query) !== -1;
+      }
+
+      function render() {
+        var host = document.getElementById("catalog");
+        var anyVisible = false;
+        var html = CATEGORIES.map(function (cat) {
+          if (activeCat !== "all" && activeCat !== cat.id) return "";
+          var items = PRODUCTS.filter(function (p) { return p.category === cat.id && matches(p); });
+          if (!items.length) return "";
+          anyVisible = true;
+          return '<h2 class="cat-head">' + esc(cat.name) + '</h2><p class="cat-blurb">' + esc(cat.blurb) + "</p>" +
+            '<div class="grid">' + items.map(cardHTML).join("") + "</div>";
+        }).join("");
+        host.innerHTML = html;
+        document.getElementById("noResults").style.display = anyVisible ? "none" : "block";
+        renderCart();
+      }
+
+      function renderTabs() {
+        var tabs = [{ id: "all", name: "All" }].concat(CATEGORIES);
+        document.getElementById("tabs").innerHTML = tabs.map(function (c) {
+          var n = c.id === "all" ? PRODUCTS.length : PRODUCTS.filter(function (p) { return p.category === c.id; }).length;
+          return '<button type="button" class="tab" role="tab" data-cat="' + c.id + '" aria-selected="' +
+            (activeCat === c.id ? "true" : "false") + '">' + esc(c.name) + '<span class="n">' + n + "</span></button>";
+        }).join("");
+      }
+
+      function cartEntries() {
+        return Object.keys(cart).map(function (id) {
+          var info = purchasable(id);
+          return info ? { id: id, qty: cart[id], name: info.name, priceCents: info.priceCents } : null;
+        }).filter(Boolean);
+      }
+      function cartTotalCents() {
+        return cartEntries().reduce(function (sum, e) { return sum + e.priceCents * e.qty; }, 0);
+      }
+      function saveCart() {
+        try { localStorage.setItem("aeriq-cart", JSON.stringify(cart)); } catch (e) {}
+      }
+
+      function renderCart() {
+        var entries = cartEntries();
+        var count = entries.reduce(function (s, e) { return s + e.qty; }, 0);
+        document.getElementById("cartCount").textContent = count;
+        var host = document.getElementById("cartItems");
+        if (!entries.length) {
+          host.innerHTML = '<p class="cart-empty">Your cart is empty.<br />Browse the shop and add what you need.</p>';
+        } else {
+          host.innerHTML = entries.map(function (e) {
+            return '<div class="cart-row"><div class="nm">' + esc(e.name) +
+              '<span class="unit">' + fmt(e.priceCents) + ' each</span></div>' +
+              '<span class="qty"><button type="button" data-dec="' + esc(e.id) + '" aria-label="Decrease quantity">−</button>' +
+              "<span>" + e.qty + "</span>" +
+              '<button type="button" data-inc="' + esc(e.id) + '" aria-label="Increase quantity">+</button></span>' +
+              '<span class="line-total">' + fmt(e.priceCents * e.qty) + "</span>" +
+              '<button type="button" class="remove-btn" data-remove="' + esc(e.id) + '">Remove</button></div>';
+          }).join("");
+        }
+        var total = cartTotalCents();
+        document.getElementById("cartSubtotal").textContent = fmt(total);
+        document.getElementById("cartTotal").textContent = fmt(total);
+        var btn = document.getElementById("checkoutBtn");
+        btn.textContent = "Checkout — " + fmt(total);
+        btn.disabled = !entries.length;
+      }
+
+      var toastTimer = null;
+      function toast(msg) {
+        var t = document.getElementById("toast");
+        t.textContent = msg;
+        t.classList.add("show");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () { t.classList.remove("show"); }, 2200);
+      }
+
+      function addToCart(pid) {
+        var p = productById(pid);
+        if (!p || p.comingSoon) return;
+        var id = pid;
+        if (p.variants) id = pid + ":" + selectedVariantId(p);
+        cart[id] = Math.min(99, (cart[id] || 0) + 1);
+        saveCart();
+        renderCart();
+        var info = purchasable(id);
+        toast("Added: " + (info ? info.name : p.name));
+      }
+
+      async function checkout() {
+        var entries = cartEntries();
+        if (!entries.length) return;
+        var btn = document.getElementById("checkoutBtn");
+        var errBox = document.getElementById("checkoutError");
+        errBox.style.display = "none";
+        btn.disabled = true;
+        btn.textContent = "Opening secure checkout…";
+        try {
+          var res = await fetch("/api/create-checkout-session", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(entries.map(function (e) { return { id: e.id, qty: e.qty }; }))
+          });
+          var data = await res.json().catch(function () { return {}; });
+          if (!res.ok || !data.url) throw new Error(data.error || ("Checkout failed (HTTP " + res.status + ")"));
+          window.location.href = data.url;
+        } catch (err) {
+          errBox.textContent = err.message;
+          errBox.style.display = "block";
+          btn.disabled = false;
+          btn.textContent = "Checkout — " + fmt(cartTotalCents());
+        }
+      }
+
+      document.addEventListener("click", function (ev) {
+        var t = ev.target;
+        var add = t.closest("[data-add-to-cart]");
+        if (add) { addToCart(add.getAttribute("data-add-to-cart")); return; }
+        var tab = t.closest("[data-cat]");
+        if (tab) { activeCat = tab.getAttribute("data-cat"); renderTabs(); render(); return; }
+        var tog = t.closest("[data-toggle]");
+        if (tog) {
+          var d = document.getElementById("details-" + tog.getAttribute("data-toggle"));
+          if (d) {
+            var open = d.classList.toggle("open");
+            tog.setAttribute("aria-expanded", open ? "true" : "false");
+            tog.textContent = open ? "Details ▴" : "Details ▾";
+          }
+          return;
+        }
+        var inc = t.closest("[data-inc]");
+        if (inc) { var i1 = inc.getAttribute("data-inc"); cart[i1] = Math.min(99, (cart[i1] || 0) + 1); saveCart(); renderCart(); return; }
+        var dec = t.closest("[data-dec]");
+        if (dec) { var i2 = dec.getAttribute("data-dec"); cart[i2] = (cart[i2] || 0) - 1; if (cart[i2] <= 0) delete cart[i2]; saveCart(); renderCart(); return; }
+        var rem = t.closest("[data-remove]");
+        if (rem) { delete cart[rem.getAttribute("data-remove")]; saveCart(); renderCart(); return; }
+      });
+      document.addEventListener("change", function (ev) {
+        var sel = ev.target.closest("select[data-variant-for]");
+        if (sel) {
+          var p = productById(sel.getAttribute("data-variant-for"));
+          if (p) {
+            var price = currentPriceCents(p);
+            document.querySelectorAll('[data-price-for="' + p.id + '"]').forEach(function (el) { el.textContent = fmt(price); });
+          }
+        }
+      });
+      document.getElementById("search").addEventListener("input", function (ev) {
+        query = ev.target.value.trim().toLowerCase();
+        render();
+      });
+      document.getElementById("checkoutBtn").addEventListener("click", checkout);
+      document.getElementById("clearCartBtn").addEventListener("click", function () {
+        cart = {}; saveCart(); renderCart(); toast("Cart cleared");
+      });
+      document.getElementById("cartBtn").addEventListener("click", function () {
+        document.getElementById("cart").scrollIntoView({ behavior: "smooth" });
+      });
+
+      Promise.all([
+        fetch("catalog.json").then(function (r) { return r.json(); }),
+        fetch("meta.json").then(function (r) { return r.json(); })
+      ]).then(function (results) {
+        PRODUCTS = results[0];
+        CATEGORIES = results[1].categories;
+        ENDORSEMENTS = results[1].endorsements;
+        // Drop any stale cart entries that no longer resolve.
+        Object.keys(cart).forEach(function (id) { if (!purchasable(id)) delete cart[id]; });
+        renderTabs();
+        render();
+      }).catch(function () {
+        document.getElementById("catalog").innerHTML = '<p class="no-results" style="display:block">The catalog could not be loaded. Please refresh the page.</p>';
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+{
+  "categories": [
+    {
+      "id": "flight-gear",
+      "name": "Flight Gear",
+      "blurb": "Bags, mounts, and the everyday carry that lives in the cockpit."
+    },
+    {
+      "id": "books-manuals",
+      "name": "Books & Manuals",
+      "blurb": "POHs, FAA handbooks, ACS booklets, and the logbook that records it all."
+    },
+    {
+      "id": "checklists-tools",
+      "name": "Checklists & Cockpit Tools",
+      "blurb": "Checklists, plotters, testers, and the small tools a preflight runs on."
+    },
+    {
+      "id": "uniforms-apparel",
+      "name": "Uniforms & Apparel",
+      "blurb": "Uniform pieces and aviator apparel, from epaulets to custom tees."
+    },
+    {
+      "id": "cfi-training",
+      "name": "CFI & Training Aids",
+      "blurb": "Endorsement labels, view-limiting devices, and partial-panel training aids."
+    },
+    {
+      "id": "gifts-accessories",
+      "name": "Gifts & Accessories",
+      "blurb": "Small pilot gifts: keychains, pins, and hangar decor."
+    }
+  ],
+  "endorsements": [
+    {
+      "id": "presolo-knowledge",
+      "label": "Pre-solo aeronautical knowledge",
+      "ref": "14 CFR § 61.87(b)"
+    },
+    {
+      "id": "presolo-flight",
+      "label": "Pre-solo flight training",
+      "ref": "14 CFR § 61.87(c)–(n)"
+    },
+    {
+      "id": "solo-xc",
+      "label": "Solo cross-country",
+      "ref": "14 CFR § 61.93(c)"
+    },
+    {
+      "id": "private-practical",
+      "label": "Private pilot practical test",
+      "ref": "14 CFR § 61.103(f)"
+    },
+    {
+      "id": "flight-review",
+      "label": "Flight review",
+      "ref": "14 CFR § 61.56"
+    },
+    {
+      "id": "ipc",
+      "label": "Instrument proficiency check",
+      "ref": "14 CFR § 61.57(d)"
+    },
+    {
+      "id": "complex",
+      "label": "Complex endorsement",
+      "ref": "14 CFR § 61.31(e)"
+    },
+    {
+      "id": "high-performance",
+      "label": "High-performance endorsement",
+      "ref": "14 CFR § 61.31(f)"
+    },
+    {
+      "id": "tailwheel",
+      "label": "Tailwheel endorsement",
+      "ref": "14 CFR § 61.31(i)"
+    }
+  ]
+}
