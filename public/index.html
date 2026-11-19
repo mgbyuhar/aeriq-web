@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
     <meta name="description" content="AERIQ — pilot gear, FAA handbooks, checklists, uniforms and CFI training aids. Pay securely by card through Stripe." />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#101216" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AERIQ" />
     <title>AERIQ — Gear for Smart Pilots</title>
     <style>
       :root {
@@ -48,7 +55,8 @@
       .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px 64px; }
 
       /* Nav */
-      .nav { position: sticky; top: 0; z-index: 50; background: var(--nav-bg); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); color: var(--nav-ink); }
+      .topbar { position: sticky; top: 0; z-index: 50; }
+      .nav { background: var(--nav-bg); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); color: var(--nav-ink); }
       .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; gap: 22px; min-height: 52px; }
       .wordmark { font-size: 21px; font-weight: 700; letter-spacing: 0.14em; color: var(--nav-ink); text-decoration: none; }
       .wordmark span { color: #ff8a3d; }
@@ -64,7 +72,7 @@
       .how { max-width: 720px; margin: 28px auto 0; color: var(--ink-2); font-size: 15px; text-align: center; }
 
       /* Controls */
-      .controls { position: sticky; top: 52px; z-index: 40; background: var(--bg); padding: 14px 0 10px; }
+      .controls { background: var(--bg); padding: 14px 20px 10px; max-width: 1120px; margin: 0 auto; box-shadow: 0 1px 0 var(--line); }
       .tabs { display: flex; gap: 8px; flex-wrap: wrap; }
       .tab { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 8px 14px; font-size: 13.5px; cursor: pointer; min-height: 38px; }
       .tab[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
@@ -136,6 +144,7 @@
     </style>
   </head>
   <body>
+    <header class="topbar">
     <nav class="nav">
       <div class="nav-inner">
         <a class="wordmark" href="#top">AERIQ<span>.</span></a>
@@ -148,6 +157,13 @@
         </div>
       </div>
     </nav>
+        <div class="controls">
+          <div class="tabs" role="tablist" aria-label="Product categories" id="tabs"></div>
+          <div class="search-row">
+            <input type="search" id="search" placeholder="Search the shop — try “logbook” or “headset”" aria-label="Search products" />
+          </div>
+        </div>
+    </header>
 
     <main class="wrap" id="top">
       <section class="hero">
@@ -157,12 +173,6 @@
       </section>
 
       <section id="shop">
-        <div class="controls">
-          <div class="tabs" role="tablist" aria-label="Product categories" id="tabs"></div>
-          <div class="search-row">
-            <input type="search" id="search" placeholder="Search the shop — try “logbook” or “headset”" aria-label="Search products" />
-          </div>
-        </div>
         <div id="catalog"></div>
         <p class="no-results" id="noResults">Nothing matches that search. Try a shorter word, or browse a category above.</p>
       </section>
@@ -485,6 +495,13 @@
       }).catch(function () {
         document.getElementById("catalog").innerHTML = '<p class="no-results" style="display:block">The catalog could not be loaded. Please refresh the page.</p>';
       });
+    </script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/sw.js").catch(function () {});
+        });
+      }
     </script>
   </body>
 </html>
